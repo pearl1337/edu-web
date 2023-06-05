@@ -11,6 +11,7 @@ import MeetingItem from "../../components/MeetingItem.vue";
 import ListItemIcon from "@/components/UI/ListItemIcon.vue";
 import { buildURL } from "@/services/url";
 import UsersTable from "@/components/UsersTable.vue";
+import { GetUserInfo } from "@/api/User";
 export default {
   name: "CoursePage",
   components: {
@@ -79,6 +80,9 @@ export default {
         (a, b) =>
           new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
       );
+    },
+    user() {
+      return GetUserInfo();
     },
     courseID() {
       return this.$route.params.courseID;
@@ -222,7 +226,7 @@ export default {
           </va-tabs>
           <div v-if="actionTab === actionTabs[0]" class="tabs-content">
             <div class="create-task-block">
-              <va-avatar>M</va-avatar>
+              <va-avatar>{{ user.name.substr(0, 1) }}</va-avatar>
               <va-form
                 @validation="taskValidation = $event"
                 @submit.prevent="newTask"
@@ -248,25 +252,12 @@ export default {
           </div>
           <div v-if="actionTab === actionTabs[1]" class="tabs-content">
             <div class="create-task-block advert-block">
-              <va-avatar>M</va-avatar>
+              <va-avatar>{{ user.name.substr(0, 1) }}</va-avatar>
               <va-form
                 @validation="advertValidation = $event"
                 @submit.prevent="newTask"
                 ref="advertForm"
               >
-                <!-- <va-input
-                  class="mb-4"
-                  type="textarea"
-                  placeholder="Оголошення"
-                  autosize
-                  :min-rows="3"
-                  :max-rows="5"
-                  v-model="advertInput"
-                  :rules="[
-                    (value) =>
-                      (value && value.length > 0) || 'Обов\'я зкове поле',
-                  ]"
-                /> -->
                 <QuillEditor
                   v-model:content="advertInput"
                   content-type="html"
@@ -280,7 +271,7 @@ export default {
           </div>
           <div v-if="actionTab === actionTabs[2]" class="tabs-content">
             <div class="create-task-block">
-              <va-avatar>M</va-avatar>
+              <va-avatar>{{ user.name.substr(0, 1) }}</va-avatar>
               <va-form
                 @validation="meetingValidation = $event"
                 @submit.prevent="newTask"
