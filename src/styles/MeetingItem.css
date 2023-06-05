@@ -1,0 +1,39 @@
+.task-item {
+  padding: 20px;
+  border: 1px solid rgb(211, 211, 211);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+}
+.task-item:hover {
+  background-color: rgba(211, 211, 211, 0.2);
+}
+.task-ico {
+  background-color: #6ac4dc;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding-left: 3px;
+}
+.task-ico svg {
+  fill: white;
+}
+.taskText p {
+  font-weight: 500;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  color: #1B1A1F;
+}
+.taskText span {
+  font-weight: 400;
+  font-size: 13px;
+  color: gray;
+}

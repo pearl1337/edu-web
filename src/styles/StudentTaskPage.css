@@ -1,0 +1,69 @@
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+.main-content {
+  margin: 0 auto;
+  width: 1000px;
+  padding-top: 30px;
+}
+.text-block h1 {
+  font-size: 30px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.task-text {
+  max-width: 650px;
+  margin-top: 30px;
+}
+.actions-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.actions-block {
+  width: 250px;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.action-block__buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.action-block__buttons > button {
+  width: 100%;
+}
+.files-block {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.messageChip {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  padding: 8px 5px;
+  border: 1px solid rgb(255, 172, 10);
+  background: rgb(255, 220, 150);
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.messageChip span {
+  font-weight: 700;
+}

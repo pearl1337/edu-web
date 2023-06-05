@@ -1,0 +1,37 @@
+.course-card {
+  width: 274px;
+  height: 177px;
+  background: #6ac4dc;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course-card__name {
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.user-block {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+.user-block > span{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #232360;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5E5CE6;
+    font-weight: 700;
+    color: #FFF;
+    border-radius: 50%;
+}

@@ -1,0 +1,38 @@
+.wrap {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.login-block {
+    width: 200px;
+    height: 300px;
+    margin-top: -100px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.error {
+    font-weight: 700;
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+}
+.chose-role {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.chose-role button{
+    display: flex;
+    padding: 10px 30px;
+}
+.change-role h2 {
+    text-align: center;
+}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f3f4f8;
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style: none;
+}
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #232360;
+  margin: 24px 0;
+}
+a {
+  text-decoration: none;
+}
+.button-primary-light {
+  background: #edecfe;
+  border-radius: 9px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  color: #5051f9;
+  outline: none;
+  border: none;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.notification-block {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.link {
+  color: #232360;
+  font-weight: 500;
+}
+.default-input {
+  padding: 8px;
+  outline: none;
+  background-color: white;
+  border: none;
+  border: 1px solid #f3f4f8;
+  border-radius: 5px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.light-button {
+  padding: 8px 10px;
+  display: flex;
+  border-radius: 20px;
+  border: none;
+  background: rgb(21, 78, 193, .1);
+  color: rgb(21, 78, 193);
+  cursor: pointer;
+  transition: .5s;
+}
+.light-button:hover {
+  background: rgb(21, 78, 193, .08);
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.popup-wrap {
+  position: absolute;
+}
+.mh-1 {
+  margin: 5px 0;
+}

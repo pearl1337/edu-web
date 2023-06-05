@@ -1,0 +1,31 @@
+.task-item {
+  padding: 20px;
+  border: 1px solid rgb(211, 211, 211);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+.task-ico {
+  background-color: rgb(44, 130, 224);;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.task-ico svg {
+  fill: white;
+}
+.taskText p {
+  font-weight: 500;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.taskText span {
+  font-weight: 400;
+  font-size: 13px;
+  color: gray;
+}
